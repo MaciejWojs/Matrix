@@ -92,13 +92,13 @@ jobs:
       - name: Generate UML assets
         run: |
           java -jar plantuml.jar -tpng ${{ env.UML_FILE }}
-          mv ${{env.UML_WITHOUT_EXT}}.png uml_white.png
+          mv ${{env.UML_WITHOUT_EXT}}.png uml-white.png
           java -jar plantuml.jar -tpng ${{ env.UML_FILE }} -config config.txt
-          mv ${{env.UML_WITHOUT_EXT}}.png uml_dark.png
+          mv ${{env.UML_WITHOUT_EXT}}.png uml-dark.png
           java -jar plantuml.jar -tsvg ${{ env.UML_FILE }}
-          mv ${{env.UML_WITHOUT_EXT}}.svg uml_white.svg
+          mv ${{env.UML_WITHOUT_EXT}}.svg uml-white.svg
           java -jar plantuml.jar -tsvg ${{ env.UML_FILE }} -config config.txt
-          mv ${{env.UML_WITHOUT_EXT}}.svg uml_dark.svg
+          mv ${{env.UML_WITHOUT_EXT}}.svg uml-dark.svg
       
       - name: Prettify doxygen
         run: |
