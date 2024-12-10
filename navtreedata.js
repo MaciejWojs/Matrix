@@ -38,11 +38,16 @@ var NAVTREE =
       [ "Indeks klas", "classes.html", null ],
       [ "Składowe klas", "functions.html", [
         [ "Wszystko", "functions.html", null ],
-        [ "Funkcje", "functions_func.html", null ]
+        [ "Funkcje", "functions_func.html", null ],
+        [ "Powiązane symbole", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Pliki", "files.html", [
-      [ "Lista plików", "files.html", "files_dup" ]
+      [ "Lista plików", "files.html", "files_dup" ],
+      [ "Składowe plików", "globals.html", [
+        [ "Wszystko", "globals.html", null ],
+        [ "Funkcje", "globals_func.html", null ]
+      ] ]
     ] ]
   ] ]
 ];

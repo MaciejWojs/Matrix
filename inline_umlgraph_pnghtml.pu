@@ -1,7 +1,41 @@
 @startuml inline_umlgraph_1.png
 class Matrix {
 +Matrix()
++Matrix(int size)
++Matrix(int size, int* array)
++Matrix(Matrix& matrix)
 +~Matrix()
++check_shape() : Matrix
++operator*(int a, Matrix& m) : Matrix
++operator+(int a, Matrix& m) : Matrix
++operator-(int a, Matrix& m) : Matrix
++allocate(int n) : Matrix&
++column(int x, int* array) : Matrix&
++diagonal(int* array) : Matrix&
++diagonal_k(int* array) : Matrix&
++fill_above_diagonal() : Matrix&
++fill_diagonal() : Matrix&
++fill_under_diagonal() : Matrix&
++insert(int row, int column, int value) : Matrix&
++operator*(Matrix& m) : Matrix&
++operator*(int a) : Matrix&
++operator*=(int a) : Matrix&
++operator+(Matrix& m) : Matrix&
++operator+(int a) : Matrix&
++operator++(int) : Matrix&
++operator+=(int a) : Matrix&
++operator-(int a) : Matrix&
++operator--(int) : Matrix&
++operator-=(int a) : Matrix&
++random() : Matrix&
++random(int how_much) : Matrix&
++row(int y, int* array) : Matrix&
++transpose() : Matrix&
++operator<(const Matrix& m) : bool
++operator==(const Matrix& m) : bool
++operator>(const Matrix& m) : bool
++show(int row, int column) : int
++operator<<(std::ostream& o, Matrix& m) : std :: ostream&
 
 }
 @enduml

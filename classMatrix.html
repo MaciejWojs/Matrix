@@ -29,7 +29,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project<span id="projectnumber">&#160;v0.0.3</span>
+   <div id="projectname">My Project<span id="projectnumber">&#160;v0.0.4</span>
    </div>
    <div id="projectbrief">Implementacja</div>
   </td>
@@ -101,6 +101,7 @@ $(function(){initNavTree('classMatrix.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#friends">Przyjaciele</a> &#124;
 <a href="classMatrix-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle"><div class="title">Dokumentacja klasy Matrix</div></div>
 </div><!--header-->
@@ -112,8 +113,79 @@ $(function(){initNavTree('classMatrix.html',''); initResizable(true); });
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a2dba13c45127354c9f75ef576f49269b" id="r_a2dba13c45127354c9f75ef576f49269b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dba13c45127354c9f75ef576f49269b">Matrix</a> ()</td></tr>
 <tr class="separator:a2dba13c45127354c9f75ef576f49269b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb16cdcaa33a48c4a5547147cee77a7" id="r_addb16cdcaa33a48c4a5547147cee77a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addb16cdcaa33a48c4a5547147cee77a7">Matrix</a> (int size)</td></tr>
+<tr class="separator:addb16cdcaa33a48c4a5547147cee77a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e89ab6c138ef7e586ddbafb55af3d14" id="r_a5e89ab6c138ef7e586ddbafb55af3d14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e89ab6c138ef7e586ddbafb55af3d14">Matrix</a> (int size, int *array)</td></tr>
+<tr class="separator:a5e89ab6c138ef7e586ddbafb55af3d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f43da150ed83e13ffc0806688ae05b6" id="r_a7f43da150ed83e13ffc0806688ae05b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f43da150ed83e13ffc0806688ae05b6">Matrix</a> (<a class="el" href="classMatrix.html">Matrix</a> &amp;matrix)</td></tr>
+<tr class="separator:a7f43da150ed83e13ffc0806688ae05b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b1c3627f573d78a2f08623fdfef990f" id="r_a9b1c3627f573d78a2f08623fdfef990f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b1c3627f573d78a2f08623fdfef990f">~Matrix</a> ()</td></tr>
 <tr class="separator:a9b1c3627f573d78a2f08623fdfef990f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb09844c62bbffe6c9b6c77cc7abc11" id="r_a6cb09844c62bbffe6c9b6c77cc7abc11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cb09844c62bbffe6c9b6c77cc7abc11">allocate</a> (int n)</td></tr>
+<tr class="separator:a6cb09844c62bbffe6c9b6c77cc7abc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38e86ac91b14c779ffdb52f469d1495" id="r_ac38e86ac91b14c779ffdb52f469d1495"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac38e86ac91b14c779ffdb52f469d1495">insert</a> (int <a class="el" href="#a3ec04130baa0bededffa9eca469272e6">row</a>, int <a class="el" href="#a86940a4cff1fb746d0a330ff9d40a5c5">column</a>, int value)</td></tr>
+<tr class="separator:ac38e86ac91b14c779ffdb52f469d1495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e6b568a87639a5148f4c36bda8fcc5" id="r_a94e6b568a87639a5148f4c36bda8fcc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94e6b568a87639a5148f4c36bda8fcc5">show</a> (int <a class="el" href="#a3ec04130baa0bededffa9eca469272e6">row</a>, int <a class="el" href="#a86940a4cff1fb746d0a330ff9d40a5c5">column</a>)</td></tr>
+<tr class="separator:a94e6b568a87639a5148f4c36bda8fcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad609fedfd61e93679803bb114e544569" id="r_ad609fedfd61e93679803bb114e544569"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad609fedfd61e93679803bb114e544569">transpose</a> ()</td></tr>
+<tr class="separator:ad609fedfd61e93679803bb114e544569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b7dc02858176167239134e28b1da4a5" id="r_a1b7dc02858176167239134e28b1da4a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b7dc02858176167239134e28b1da4a5">random</a> ()</td></tr>
+<tr class="separator:a1b7dc02858176167239134e28b1da4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16dd97ed9595a50d95479f18149dcc15" id="r_a16dd97ed9595a50d95479f18149dcc15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16dd97ed9595a50d95479f18149dcc15">random</a> (int how_much)</td></tr>
+<tr class="separator:a16dd97ed9595a50d95479f18149dcc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1160586f6937dab467136eb04469cec8" id="r_a1160586f6937dab467136eb04469cec8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1160586f6937dab467136eb04469cec8">diagonal</a> (int *array)</td></tr>
+<tr class="separator:a1160586f6937dab467136eb04469cec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca6b0acd7405c73a76b6a602fc15a7b" id="r_a2ca6b0acd7405c73a76b6a602fc15a7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ca6b0acd7405c73a76b6a602fc15a7b">diagonal_k</a> (int *array)</td></tr>
+<tr class="separator:a2ca6b0acd7405c73a76b6a602fc15a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86940a4cff1fb746d0a330ff9d40a5c5" id="r_a86940a4cff1fb746d0a330ff9d40a5c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86940a4cff1fb746d0a330ff9d40a5c5">column</a> (int x, int *array)</td></tr>
+<tr class="separator:a86940a4cff1fb746d0a330ff9d40a5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec04130baa0bededffa9eca469272e6" id="r_a3ec04130baa0bededffa9eca469272e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ec04130baa0bededffa9eca469272e6">row</a> (int y, int *array)</td></tr>
+<tr class="separator:a3ec04130baa0bededffa9eca469272e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6f99e0727181c7b03eef88ce06ce0e" id="r_afc6f99e0727181c7b03eef88ce06ce0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc6f99e0727181c7b03eef88ce06ce0e">fill_diagonal</a> ()</td></tr>
+<tr class="separator:afc6f99e0727181c7b03eef88ce06ce0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1eae1a42e9526cf5627673bc373d0a" id="r_abb1eae1a42e9526cf5627673bc373d0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb1eae1a42e9526cf5627673bc373d0a">fill_under_diagonal</a> ()</td></tr>
+<tr class="separator:abb1eae1a42e9526cf5627673bc373d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c74da931e1fdd51776971b24b382947" id="r_a9c74da931e1fdd51776971b24b382947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c74da931e1fdd51776971b24b382947">fill_above_diagonal</a> ()</td></tr>
+<tr class="separator:a9c74da931e1fdd51776971b24b382947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3edf27d6ae6def59c1beb8217e983c02" id="r_a3edf27d6ae6def59c1beb8217e983c02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3edf27d6ae6def59c1beb8217e983c02">check_shape</a> ()</td></tr>
+<tr class="separator:a3edf27d6ae6def59c1beb8217e983c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc7127ce96c997c9d14f1f8874ed742" id="r_a7cc7127ce96c997c9d14f1f8874ed742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cc7127ce96c997c9d14f1f8874ed742">operator+</a> (<a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:a7cc7127ce96c997c9d14f1f8874ed742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bc7e1fda06dab52353ac01b3196efd" id="r_ae1bc7e1fda06dab52353ac01b3196efd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1bc7e1fda06dab52353ac01b3196efd">operator*</a> (<a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:ae1bc7e1fda06dab52353ac01b3196efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadabbccfbd0a95f43c8fe2f98a09b0c0" id="r_aadabbccfbd0a95f43c8fe2f98a09b0c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadabbccfbd0a95f43c8fe2f98a09b0c0">operator+</a> (int a)</td></tr>
+<tr class="separator:aadabbccfbd0a95f43c8fe2f98a09b0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ea65b3aa311b3ebc018948d14ed7fe" id="r_ab0ea65b3aa311b3ebc018948d14ed7fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0ea65b3aa311b3ebc018948d14ed7fe">operator*</a> (int a)</td></tr>
+<tr class="separator:ab0ea65b3aa311b3ebc018948d14ed7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2e2721a17fcea4f41f3236f7869516" id="r_acd2e2721a17fcea4f41f3236f7869516"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd2e2721a17fcea4f41f3236f7869516">operator-</a> (int a)</td></tr>
+<tr class="separator:acd2e2721a17fcea4f41f3236f7869516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1b4ee78cb7723c5e66ff9369d66e5f" id="r_a1a1b4ee78cb7723c5e66ff9369d66e5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a1b4ee78cb7723c5e66ff9369d66e5f">operator++</a> (int)</td></tr>
+<tr class="separator:a1a1b4ee78cb7723c5e66ff9369d66e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417d5ca1f2e6253d24da43a3f85e929f" id="r_a417d5ca1f2e6253d24da43a3f85e929f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a417d5ca1f2e6253d24da43a3f85e929f">operator--</a> (int)</td></tr>
+<tr class="separator:a417d5ca1f2e6253d24da43a3f85e929f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d29d6024ab3a1d23b1ee008d1f6487a" id="r_a1d29d6024ab3a1d23b1ee008d1f6487a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d29d6024ab3a1d23b1ee008d1f6487a">operator+=</a> (int a)</td></tr>
+<tr class="separator:a1d29d6024ab3a1d23b1ee008d1f6487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e15fbd51450e23db89449c13f761298" id="r_a4e15fbd51450e23db89449c13f761298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e15fbd51450e23db89449c13f761298">operator-=</a> (int a)</td></tr>
+<tr class="separator:a4e15fbd51450e23db89449c13f761298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0997fe9dfbfae4b088628ef4b057ac91" id="r_a0997fe9dfbfae4b088628ef4b057ac91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0997fe9dfbfae4b088628ef4b057ac91">operator*=</a> (int a)</td></tr>
+<tr class="separator:a0997fe9dfbfae4b088628ef4b057ac91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37285ebf9e6f823ac0e54d01b9f3822f" id="r_a37285ebf9e6f823ac0e54d01b9f3822f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37285ebf9e6f823ac0e54d01b9f3822f">operator==</a> (const <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:a37285ebf9e6f823ac0e54d01b9f3822f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e32ec219cdf201d3ed8b48f71a3ae5" id="r_a81e32ec219cdf201d3ed8b48f71a3ae5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81e32ec219cdf201d3ed8b48f71a3ae5">operator&gt;</a> (const <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:a81e32ec219cdf201d3ed8b48f71a3ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc714bd0bbd76ba248a27023b7966e2" id="r_a4fc714bd0bbd76ba248a27023b7966e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fc714bd0bbd76ba248a27023b7966e2">operator&lt;</a> (const <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:a4fc714bd0bbd76ba248a27023b7966e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Przyjaciele</h2></td></tr>
+<tr class="memitem:a6d6c2912d7d078cdaacd10f4eab3cb1d" id="r_a6d6c2912d7d078cdaacd10f4eab3cb1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d6c2912d7d078cdaacd10f4eab3cb1d">operator+</a> (int a, <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:a6d6c2912d7d078cdaacd10f4eab3cb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b9085349415e5f97dd35927843ed51" id="r_ac4b9085349415e5f97dd35927843ed51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4b9085349415e5f97dd35927843ed51">operator*</a> (int a, <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:ac4b9085349415e5f97dd35927843ed51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f20cfac4af1a1b21a75d22d3a9014ea" id="r_a8f20cfac4af1a1b21a75d22d3a9014ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f20cfac4af1a1b21a75d22d3a9014ea">operator-</a> (int a, <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:a8f20cfac4af1a1b21a75d22d3a9014ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae893ba1cd6068e33ff767bbd45450ec" id="r_aae893ba1cd6068e33ff767bbd45450ec"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae893ba1cd6068e33ff767bbd45450ec">operator&lt;&lt;</a> (std::ostream &amp;o, <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:aae893ba1cd6068e33ff767bbd45450ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><div class="plantumlgraph">
@@ -121,7 +193,7 @@ Metody publiczne</h2></td></tr>
 </div>
  </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a2dba13c45127354c9f75ef576f49269b" name="a2dba13c45127354c9f75ef576f49269b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dba13c45127354c9f75ef576f49269b">&#9670;&#160;</a></span>Matrix()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dba13c45127354c9f75ef576f49269b">&#9670;&#160;</a></span>Matrix() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,6 +202,61 @@ Metody publiczne</h2></td></tr>
           <td class="memname">Matrix::Matrix </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addb16cdcaa33a48c4a5547147cee77a7" name="addb16cdcaa33a48c4a5547147cee77a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb16cdcaa33a48c4a5547147cee77a7">&#9670;&#160;</a></span>Matrix() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix::Matrix </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e89ab6c138ef7e586ddbafb55af3d14" name="a5e89ab6c138ef7e586ddbafb55af3d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e89ab6c138ef7e586ddbafb55af3d14">&#9670;&#160;</a></span>Matrix() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix::Matrix </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>array</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f43da150ed83e13ffc0806688ae05b6" name="a7f43da150ed83e13ffc0806688ae05b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f43da150ed83e13ffc0806688ae05b6">&#9670;&#160;</a></span>Matrix() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix::Matrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>matrix</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -150,6 +277,604 @@ Metody publiczne</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a6cb09844c62bbffe6c9b6c77cc7abc11" name="a6cb09844c62bbffe6c9b6c77cc7abc11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb09844c62bbffe6c9b6c77cc7abc11">&#9670;&#160;</a></span>allocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::allocate </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3edf27d6ae6def59c1beb8217e983c02" name="a3edf27d6ae6def59c1beb8217e983c02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3edf27d6ae6def59c1beb8217e983c02">&#9670;&#160;</a></span>check_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> Matrix::check_shape </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86940a4cff1fb746d0a330ff9d40a5c5" name="a86940a4cff1fb746d0a330ff9d40a5c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86940a4cff1fb746d0a330ff9d40a5c5">&#9670;&#160;</a></span>column()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::column </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>array</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1160586f6937dab467136eb04469cec8" name="a1160586f6937dab467136eb04469cec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1160586f6937dab467136eb04469cec8">&#9670;&#160;</a></span>diagonal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::diagonal </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>array</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ca6b0acd7405c73a76b6a602fc15a7b" name="a2ca6b0acd7405c73a76b6a602fc15a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca6b0acd7405c73a76b6a602fc15a7b">&#9670;&#160;</a></span>diagonal_k()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::diagonal_k </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>array</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c74da931e1fdd51776971b24b382947" name="a9c74da931e1fdd51776971b24b382947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c74da931e1fdd51776971b24b382947">&#9670;&#160;</a></span>fill_above_diagonal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::fill_above_diagonal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc6f99e0727181c7b03eef88ce06ce0e" name="afc6f99e0727181c7b03eef88ce06ce0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6f99e0727181c7b03eef88ce06ce0e">&#9670;&#160;</a></span>fill_diagonal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::fill_diagonal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb1eae1a42e9526cf5627673bc373d0a" name="abb1eae1a42e9526cf5627673bc373d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb1eae1a42e9526cf5627673bc373d0a">&#9670;&#160;</a></span>fill_under_diagonal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::fill_under_diagonal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac38e86ac91b14c779ffdb52f469d1495" name="ac38e86ac91b14c779ffdb52f469d1495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38e86ac91b14c779ffdb52f469d1495">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::insert </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>row</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>column</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0ea65b3aa311b3ebc018948d14ed7fe" name="ab0ea65b3aa311b3ebc018948d14ed7fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ea65b3aa311b3ebc018948d14ed7fe">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::operator* </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1bc7e1fda06dab52353ac01b3196efd" name="ae1bc7e1fda06dab52353ac01b3196efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1bc7e1fda06dab52353ac01b3196efd">&#9670;&#160;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0997fe9dfbfae4b088628ef4b057ac91" name="a0997fe9dfbfae4b088628ef4b057ac91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0997fe9dfbfae4b088628ef4b057ac91">&#9670;&#160;</a></span>operator*=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadabbccfbd0a95f43c8fe2f98a09b0c0" name="aadabbccfbd0a95f43c8fe2f98a09b0c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadabbccfbd0a95f43c8fe2f98a09b0c0">&#9670;&#160;</a></span>operator+() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7cc7127ce96c997c9d14f1f8874ed742" name="a7cc7127ce96c997c9d14f1f8874ed742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc7127ce96c997c9d14f1f8874ed742">&#9670;&#160;</a></span>operator+() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a1b4ee78cb7723c5e66ff9369d66e5f" name="a1a1b4ee78cb7723c5e66ff9369d66e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a1b4ee78cb7723c5e66ff9369d66e5f">&#9670;&#160;</a></span>operator++()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d29d6024ab3a1d23b1ee008d1f6487a" name="a1d29d6024ab3a1d23b1ee008d1f6487a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d29d6024ab3a1d23b1ee008d1f6487a">&#9670;&#160;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd2e2721a17fcea4f41f3236f7869516" name="acd2e2721a17fcea4f41f3236f7869516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2e2721a17fcea4f41f3236f7869516">&#9670;&#160;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::operator- </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a417d5ca1f2e6253d24da43a3f85e929f" name="a417d5ca1f2e6253d24da43a3f85e929f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a417d5ca1f2e6253d24da43a3f85e929f">&#9670;&#160;</a></span>operator--()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e15fbd51450e23db89449c13f761298" name="a4e15fbd51450e23db89449c13f761298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e15fbd51450e23db89449c13f761298">&#9670;&#160;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fc714bd0bbd76ba248a27023b7966e2" name="a4fc714bd0bbd76ba248a27023b7966e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc714bd0bbd76ba248a27023b7966e2">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Matrix::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37285ebf9e6f823ac0e54d01b9f3822f" name="a37285ebf9e6f823ac0e54d01b9f3822f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37285ebf9e6f823ac0e54d01b9f3822f">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Matrix::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81e32ec219cdf201d3ed8b48f71a3ae5" name="a81e32ec219cdf201d3ed8b48f71a3ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e32ec219cdf201d3ed8b48f71a3ae5">&#9670;&#160;</a></span>operator&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Matrix::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b7dc02858176167239134e28b1da4a5" name="a1b7dc02858176167239134e28b1da4a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b7dc02858176167239134e28b1da4a5">&#9670;&#160;</a></span>random() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::random </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16dd97ed9595a50d95479f18149dcc15" name="a16dd97ed9595a50d95479f18149dcc15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16dd97ed9595a50d95479f18149dcc15">&#9670;&#160;</a></span>random() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::random </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>how_much</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ec04130baa0bededffa9eca469272e6" name="a3ec04130baa0bededffa9eca469272e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec04130baa0bededffa9eca469272e6">&#9670;&#160;</a></span>row()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::row </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>array</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94e6b568a87639a5148f4c36bda8fcc5" name="a94e6b568a87639a5148f4c36bda8fcc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e6b568a87639a5148f4c36bda8fcc5">&#9670;&#160;</a></span>show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Matrix::show </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>row</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>column</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad609fedfd61e93679803bb114e544569" name="ad609fedfd61e93679803bb114e544569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad609fedfd61e93679803bb114e544569">&#9670;&#160;</a></span>transpose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> &amp; Matrix::transpose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja przyjaciół i powiązanych symboli</h2>
+<a id="ac4b9085349415e5f97dd35927843ed51" name="ac4b9085349415e5f97dd35927843ed51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b9085349415e5f97dd35927843ed51">&#9670;&#160;</a></span>operator*</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d6c2912d7d078cdaacd10f4eab3cb1d" name="a6d6c2912d7d078cdaacd10f4eab3cb1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6c2912d7d078cdaacd10f4eab3cb1d">&#9670;&#160;</a></span>operator+</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f20cfac4af1a1b21a75d22d3a9014ea" name="a8f20cfac4af1a1b21a75d22d3a9014ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f20cfac4af1a1b21a75d22d3a9014ea">&#9670;&#160;</a></span>operator-</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrix.html">Matrix</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae893ba1cd6068e33ff767bbd45450ec" name="aae893ba1cd6068e33ff767bbd45450ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae893ba1cd6068e33ff767bbd45450ec">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

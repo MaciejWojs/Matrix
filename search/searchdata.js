@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "abcgilmops~",
+  0: "abcdfgilmoprst~",
   1: "m",
   2: "c",
   3: "cm",
-  4: "gm~",
-  5: "abcilops"
+  4: "acdfgimorst~",
+  5: "abcilops",
+  6: "o"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "variables"
+  5: "variables",
+  6: "related"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "Przestrzenie nazw",
   3: "Pliki",
   4: "Funkcje",
-  5: "Zmienne"
+  5: "Zmienne",
+  6: "Przyjaciele"
 };
 

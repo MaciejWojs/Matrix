@@ -34,7 +34,33 @@ var menudata={children:[
 {text:"Lista klas",url:"annotated.html"},
 {text:"Indeks klas",url:"classes.html"},
 {text:"Składowe klas",url:"functions.html",children:[
-{text:"Wszystko",url:"functions.html"},
-{text:"Funkcje",url:"functions_func.html"}]}]},
+{text:"Wszystko",url:"functions.html",children:[
+{text:"a",url:"functions.html#index_a"},
+{text:"c",url:"functions.html#index_c"},
+{text:"d",url:"functions.html#index_d"},
+{text:"f",url:"functions.html#index_f"},
+{text:"i",url:"functions.html#index_i"},
+{text:"m",url:"functions.html#index_m"},
+{text:"o",url:"functions.html#index_o"},
+{text:"r",url:"functions.html#index_r"},
+{text:"s",url:"functions.html#index_s"},
+{text:"t",url:"functions.html#index_t"},
+{text:"~",url:"functions.html#index__7E"}]},
+{text:"Funkcje",url:"functions_func.html",children:[
+{text:"a",url:"functions_func.html#index_a"},
+{text:"c",url:"functions_func.html#index_c"},
+{text:"d",url:"functions_func.html#index_d"},
+{text:"f",url:"functions_func.html#index_f"},
+{text:"i",url:"functions_func.html#index_i"},
+{text:"m",url:"functions_func.html#index_m"},
+{text:"o",url:"functions_func.html#index_o"},
+{text:"r",url:"functions_func.html#index_r"},
+{text:"s",url:"functions_func.html#index_s"},
+{text:"t",url:"functions_func.html#index_t"},
+{text:"~",url:"functions_func.html#index__7E"}]},
+{text:"Powiązane symbole",url:"functions_rela.html"}]}]},
 {text:"Pliki",url:"files.html",children:[
-{text:"Lista plików",url:"files.html"}]}]}
+{text:"Lista plików",url:"files.html"},
+{text:"Składowe plików",url:"globals.html",children:[
+{text:"Wszystko",url:"globals.html"},
+{text:"Funkcje",url:"globals_func.html"}]}]}]}
