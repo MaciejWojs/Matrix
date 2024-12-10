@@ -16,7 +16,7 @@ env:
   PYTHON_VERSION: 3.13
   UML_FILE: uml.puml
   UML_WITHOUT_EXT: uml
-  HEADER_FILE: ___HEADER_FILE___
+  HEADER_FILE: ${{ github.event.repository.name }}.hpp
   JAVA_VERSION: 23
 
 jobs:
@@ -123,6 +123,11 @@ jobs:
             latest_tag=$(curl -s https://api.github.com/repos/${{ env.REPO }}/releases/latest | jq -r '.tag_name')
             echo PROJECT_NUMBER = ${latest_tag} >> Doxyfile
           fi
+
+      - name: Set Doxygen project name and description
+        run: |
+          echo PROJECT_NAME = "${{ env.REPO_NAME }}" >> Doxyfile
+          echo PROJECT_BRIEF = "Implementacja ${{ env.REPO_NAME }}" >> Doxyfile
 
       - name: Generate Doxygen Documentation
         uses: mattnotmitt/doxygen-action@edge
