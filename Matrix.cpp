@@ -21,6 +21,14 @@ Matrix::Matrix(int size, int* _array) : Matrix(size) {
     }
 }
 
+Matrix::Matrix(Matrix& matrix) : Matrix(matrix.size) {
+    for (int i = 0; i < matrix.size; i++) {
+        for (int j = 0; j < matrix.size; j++) {
+            this->array[i][j] = matrix.array[i][j];
+        }
+    }
+}
+
 Matrix::~Matrix() {
     for (int i = 0; i < this->size; i++) {
         delete[] this->array[i];
