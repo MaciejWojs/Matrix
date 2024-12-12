@@ -25,7 +25,7 @@ var classMatrix =
     [ "operator--", "classMatrix.html#a417d5ca1f2e6253d24da43a3f85e929f", null ],
     [ "operator-=", "classMatrix.html#a4e15fbd51450e23db89449c13f761298", null ],
     [ "operator<", "classMatrix.html#a4fc714bd0bbd76ba248a27023b7966e2", null ],
-    [ "operator==", "classMatrix.html#a37285ebf9e6f823ac0e54d01b9f3822f", null ],
+    [ "operator==", "classMatrix.html#a35097c20bcb1495b57d452db0d7b1f53", null ],
     [ "operator>", "classMatrix.html#a81e32ec219cdf201d3ed8b48f71a3ae5", null ],
     [ "print", "classMatrix.html#a99ba97122b8fdd54e95290caf80fc8e2", null ],
     [ "random", "classMatrix.html#a1b7dc02858176167239134e28b1da4a5", null ],
