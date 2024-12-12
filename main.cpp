@@ -5,44 +5,25 @@
 
 int main() {
     std::cout << "\n\n";
-    // int size
-    std::cout << "Enter the size of the matrix: ";
+
     int size = 2;
-    std::cin >> size;
-    Matrix m(size);
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m(size, array);
 
+    int array2[size * size] = { 1, 2, 3, 4 };
+    Matrix m2(size, array2);
 
-
-    std::cout << "Enter the values of the matrix: ";
-    std::cin >> m;
-    // std::ifstream file("matrix.txt");
-    // file >> m;
-
-
-
-    // std::cin >> size; // get the matrix size
-
-    // int array[] = {1,2,3,4,5,6,7,8,9};
-
-    // m << std::cin;
-
-    // std::random_device rd;
-    // std::mt19937 gen(rd());
-
-    // for (int i = 0; i < size; i++) {
-    //     for (int j = 0; j < size; j++) {
-    //         m.insert(i, j, gen() % 10);
-    //     }
-    // }
-
+    std::cout << "Matrix 1:\n";
     m.print();
+    std::cout << "Matrix 2:\n";
+    m2.print();
 
-    std::ofstream file2("matrix2.txt");
-    file2 << m;
 
+    if (m == m2) {
+        std::cout << "Matrix 1 is equal to Matrix 2\n";
+    } else {
+        std::cout << "Matrix 1 is not equal to Matrix 2\n";
+    }
 
-    std::cout << "Hello, World!" << std::endl;
     return 0;
-
-
 }
