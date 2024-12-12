@@ -59,3 +59,17 @@ std::ostream& operator<<(std::ostream& output_stream, Matrix& m) {
 int Matrix::show(int row, int column) {
     return this->array[row][column];
 }
+
+bool Matrix::operator==(const Matrix& m) const {
+    if (this->size != m.size) {
+        return false;
+    }
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            if (this->array[i][j] != m.array[i][j]) {
+                return false;
+            }
+        }
+    }
+    return true;
+}

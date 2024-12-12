@@ -23,11 +23,7 @@ TEST(MatrixFileOperations, MatrixEqualityAfterFileOperations) {
     infile >> m2;
     infile.close();
 
-    for (int i = 0; i < size; ++i) {
-        for (int j = 0; j < size; ++j) {
-            EXPECT_EQ(m1.show(i, j), m2.show(i, j));
-        }
-    }
+    EXPECT_EQ(m1, m2);
 }
 
 TEST(MatrixFileOperations, MatrixInputOperator) {
