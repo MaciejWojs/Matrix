@@ -3,6 +3,10 @@
 #include <iostream>
 
 class Matrix {
+    private:
+    int size;
+    int** array;
+
     public:
     Matrix();
     Matrix(int size);
@@ -46,6 +50,8 @@ class Matrix {
     bool operator>(const Matrix& m);
     bool operator<(const Matrix& m);
 
+    void print();
+    friend std::istream& operator>>(std::istream& input_stream, Matrix& m);
 };
 
 
