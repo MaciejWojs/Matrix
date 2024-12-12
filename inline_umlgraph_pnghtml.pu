@@ -1,5 +1,7 @@
 @startuml inline_umlgraph_1.png
 class Matrix {
+-size : int
+-array : int**
 +Matrix()
 +Matrix(int size)
 +Matrix(int size, int* array)
@@ -35,7 +37,9 @@ class Matrix {
 +operator==(const Matrix& m) : bool
 +operator>(const Matrix& m) : bool
 +show(int row, int column) : int
++operator>>(std::istream& input_stream, Matrix& m) : std :: istream&
 +operator<<(std::ostream& o, Matrix& m) : std :: ostream&
++print() : void
 
 }
 @enduml

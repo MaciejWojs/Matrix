@@ -9,8 +9,9 @@ var searchData=
   ['operator_2d_2d_6',['operator--',['../classMatrix.html#a417d5ca1f2e6253d24da43a3f85e929f',1,'Matrix']]],
   ['operator_2d_3d_7',['operator-=',['../classMatrix.html#a4e15fbd51450e23db89449c13f761298',1,'Matrix']]],
   ['operator_3c_8',['operator&lt;',['../classMatrix.html#a4fc714bd0bbd76ba248a27023b7966e2',1,'Matrix']]],
-  ['operator_3c_3c_9',['operator&lt;&lt;',['../classMatrix.html#aae893ba1cd6068e33ff767bbd45450ec',1,'Matrix']]],
+  ['operator_3c_3c_9',['operator&lt;&lt;',['../classMatrix.html#aae893ba1cd6068e33ff767bbd45450ec',1,'Matrix::operator&lt;&lt;'],['../Matrix_8cpp.html#a61ff5315b07451b57243fbae475bff77',1,'operator&lt;&lt;():&#160;Matrix.cpp']]],
   ['operator_3d_3d_10',['operator==',['../classMatrix.html#a37285ebf9e6f823ac0e54d01b9f3822f',1,'Matrix']]],
   ['operator_3e_11',['operator&gt;',['../classMatrix.html#a81e32ec219cdf201d3ed8b48f71a3ae5',1,'Matrix']]],
-  ['output_5ffile_12',['output_file',['../namespaceconvert.html#a993c9e9b6996d3e57b5c092122b98afc',1,'convert']]]
+  ['operator_3e_3e_12',['operator&gt;&gt;',['../classMatrix.html#a11ec4d4662441284891dd06da0536a94',1,'Matrix::operator&gt;&gt;'],['../Matrix_8cpp.html#a11ec4d4662441284891dd06da0536a94',1,'operator&gt;&gt;():&#160;Matrix.cpp']]],
+  ['output_5ffile_13',['output_file',['../namespaceconvert.html#a993c9e9b6996d3e57b5c092122b98afc',1,'convert']]]
 ];

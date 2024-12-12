@@ -27,6 +27,7 @@ var classMatrix =
     [ "operator<", "classMatrix.html#a4fc714bd0bbd76ba248a27023b7966e2", null ],
     [ "operator==", "classMatrix.html#a37285ebf9e6f823ac0e54d01b9f3822f", null ],
     [ "operator>", "classMatrix.html#a81e32ec219cdf201d3ed8b48f71a3ae5", null ],
+    [ "print", "classMatrix.html#a99ba97122b8fdd54e95290caf80fc8e2", null ],
     [ "random", "classMatrix.html#a1b7dc02858176167239134e28b1da4a5", null ],
     [ "random", "classMatrix.html#a16dd97ed9595a50d95479f18149dcc15", null ],
     [ "row", "classMatrix.html#a3ec04130baa0bededffa9eca469272e6", null ],
@@ -35,5 +36,8 @@ var classMatrix =
     [ "operator*", "classMatrix.html#ac4b9085349415e5f97dd35927843ed51", null ],
     [ "operator+", "classMatrix.html#a6d6c2912d7d078cdaacd10f4eab3cb1d", null ],
     [ "operator-", "classMatrix.html#a8f20cfac4af1a1b21a75d22d3a9014ea", null ],
-    [ "operator<<", "classMatrix.html#aae893ba1cd6068e33ff767bbd45450ec", null ]
+    [ "operator<<", "classMatrix.html#aae893ba1cd6068e33ff767bbd45450ec", null ],
+    [ "operator>>", "classMatrix.html#a11ec4d4662441284891dd06da0536a94", null ],
+    [ "array", "classMatrix.html#ad8a0b99ef03f9af688578e7ff1f00c0d", null ],
+    [ "size", "classMatrix.html#acd4947d87d17f777df33e32cef2e873c", null ]
 ];
