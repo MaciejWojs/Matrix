@@ -152,7 +152,7 @@ jobs:
           root_file: refman.tex
       
       - name: Copy Polish PDF
-        # if: env.IS_TAG == 'true'
+        if: env.IS_TAG == 'true'
         run: cp ${{env.LATEX_DIR}}refman.pdf ./pl-${{ env.FILE_NAME }}.pdf
 
       - name: Change Doxyfile language to English
