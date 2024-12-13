@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Set the project name
-project(MatrixTests)
+project(Matrix)
 # standard C++
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
@@ -19,7 +19,8 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-add_library(MatrixLib Matrix.cpp)
+file(GLOB SOURCES ${PROJECT_NAME}*.cpp)
+add_library(MatrixLib ${SOURCES})
 
 # Add the test executable
 file(GLOB TEST_SOURCES test/*.cpp)

@@ -6,12 +6,13 @@
 int main() {
     std::cout << "\n\n";
 
-    int size = 2;
+    int size = 3;
     int array[size * size] = { 1, 2, 3, 4 };
     Matrix m(size, array);
 
-    int array2[size * size] = { 1, 2, 3, 4 };
-    Matrix m2(size, array2);
+    std::cout << m << std::endl;
+
+    Matrix m2(m);
 
     std::cout << "Matrix 1:\n";
     m.print();

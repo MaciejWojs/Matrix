@@ -7,6 +7,8 @@ class Matrix {
     int size;
     int** array;
 
+    void deallocate();
+    void allocateMemory(int size);
     public:
     Matrix();
     Matrix(int size);
@@ -45,7 +47,7 @@ class Matrix {
     Matrix& operator*=(int a);
     // Matrix& operator (double);
 
-    friend std::ostream& operator<<(std::ostream& o, Matrix& m);
+    friend std::ostream& operator<<(std::ostream& o, const Matrix& m);
     bool operator==(const Matrix& m) const;
     bool operator>(const Matrix& m);
     bool operator<(const Matrix& m);
