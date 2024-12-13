@@ -101,6 +101,7 @@ $(function(){initNavTree('classMatrix.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
 <a href="#pri-attribs">Atrybuty prywatne</a> &#124;
 <a href="#friends">Przyjaciele</a> &#124;
 <a href="classMatrix-members.html">Lista wszystkich składowych</a>  </div>
@@ -179,6 +180,13 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:a99ba97122b8fdd54e95290caf80fc8e2" id="r_a99ba97122b8fdd54e95290caf80fc8e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99ba97122b8fdd54e95290caf80fc8e2">print</a> ()</td></tr>
 <tr class="separator:a99ba97122b8fdd54e95290caf80fc8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a06726c819199acdd66a78790311fb43d" id="r_a06726c819199acdd66a78790311fb43d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06726c819199acdd66a78790311fb43d">deallocate</a> ()</td></tr>
+<tr class="separator:a06726c819199acdd66a78790311fb43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3da97c7be15bca48e723395438c6855" id="r_ac3da97c7be15bca48e723395438c6855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3da97c7be15bca48e723395438c6855">allocateMemory</a> (int <a class="el" href="#acd4947d87d17f777df33e32cef2e873c">size</a>)</td></tr>
+<tr class="separator:ac3da97c7be15bca48e723395438c6855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
 <tr class="memitem:acd4947d87d17f777df33e32cef2e873c" id="r_acd4947d87d17f777df33e32cef2e873c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd4947d87d17f777df33e32cef2e873c">size</a></td></tr>
@@ -194,8 +202,8 @@ Przyjaciele</h2></td></tr>
 <tr class="separator:ac4b9085349415e5f97dd35927843ed51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f20cfac4af1a1b21a75d22d3a9014ea" id="r_a8f20cfac4af1a1b21a75d22d3a9014ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f20cfac4af1a1b21a75d22d3a9014ea">operator-</a> (int a, <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
 <tr class="separator:a8f20cfac4af1a1b21a75d22d3a9014ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae893ba1cd6068e33ff767bbd45450ec" id="r_aae893ba1cd6068e33ff767bbd45450ec"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae893ba1cd6068e33ff767bbd45450ec">operator&lt;&lt;</a> (std::ostream &amp;o, <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
-<tr class="separator:aae893ba1cd6068e33ff767bbd45450ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6148b439ea866b655012a16d03fefb07" id="r_a6148b439ea866b655012a16d03fefb07"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6148b439ea866b655012a16d03fefb07">operator&lt;&lt;</a> (std::ostream &amp;o, const <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
+<tr class="separator:a6148b439ea866b655012a16d03fefb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11ec4d4662441284891dd06da0536a94" id="r_a11ec4d4662441284891dd06da0536a94"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11ec4d4662441284891dd06da0536a94">operator&gt;&gt;</a> (std::istream &amp;input_stream, <a class="el" href="classMatrix.html">Matrix</a> &amp;m)</td></tr>
 <tr class="separator:a11ec4d4662441284891dd06da0536a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -311,6 +319,31 @@ Przyjaciele</h2></td></tr>
 
 </div>
 </div>
+<a id="ac3da97c7be15bca48e723395438c6855" name="ac3da97c7be15bca48e723395438c6855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3da97c7be15bca48e723395438c6855">&#9670;&#160;</a></span>allocateMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Matrix::allocateMemory </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3edf27d6ae6def59c1beb8217e983c02" name="a3edf27d6ae6def59c1beb8217e983c02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3edf27d6ae6def59c1beb8217e983c02">&#9670;&#160;</a></span>check_shape()</h2>
 
@@ -345,6 +378,31 @@ Przyjaciele</h2></td></tr>
           <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>array</em></span>&#160;)</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06726c819199acdd66a78790311fb43d" name="a06726c819199acdd66a78790311fb43d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06726c819199acdd66a78790311fb43d">&#9670;&#160;</a></span>deallocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Matrix::deallocate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -879,8 +937,8 @@ Przyjaciele</h2></td></tr>
 
 </div>
 </div>
-<a id="aae893ba1cd6068e33ff767bbd45450ec" name="aae893ba1cd6068e33ff767bbd45450ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae893ba1cd6068e33ff767bbd45450ec">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+<a id="a6148b439ea866b655012a16d03fefb07" name="a6148b439ea866b655012a16d03fefb07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6148b439ea866b655012a16d03fefb07">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -896,7 +954,7 @@ Przyjaciele</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classMatrix.html">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -984,6 +1042,8 @@ Przyjaciele</h2></td></tr>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
 <li><a class="el" href="Matrix_8hpp_source.html">Matrix.hpp</a></li>
+<li><a class="el" href="Matrix-constructors_8cpp.html">Matrix-constructors.cpp</a></li>
+<li><a class="el" href="Matrix-operators_8cpp.html">Matrix-operators.cpp</a></li>
 <li><a class="el" href="Matrix_8cpp.html">Matrix.cpp</a></li>
 </ul>
 </div><!-- contents -->

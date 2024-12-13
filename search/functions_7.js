@@ -9,8 +9,8 @@ var searchData=
   ['operator_2d_2d_6',['operator--',['../classMatrix.html#a417d5ca1f2e6253d24da43a3f85e929f',1,'Matrix']]],
   ['operator_2d_3d_7',['operator-=',['../classMatrix.html#a4e15fbd51450e23db89449c13f761298',1,'Matrix']]],
   ['operator_3c_8',['operator&lt;',['../classMatrix.html#a4fc714bd0bbd76ba248a27023b7966e2',1,'Matrix']]],
-  ['operator_3c_3c_9',['operator&lt;&lt;',['../Matrix_8cpp.html#a61ff5315b07451b57243fbae475bff77',1,'Matrix.cpp']]],
+  ['operator_3c_3c_9',['operator&lt;&lt;',['../Matrix-operators_8cpp.html#a5bb1cbd42cb90fc74ede8d1f6f253ca5',1,'Matrix-operators.cpp']]],
   ['operator_3d_3d_10',['operator==',['../classMatrix.html#a35097c20bcb1495b57d452db0d7b1f53',1,'Matrix']]],
   ['operator_3e_11',['operator&gt;',['../classMatrix.html#a81e32ec219cdf201d3ed8b48f71a3ae5',1,'Matrix']]],
-  ['operator_3e_3e_12',['operator&gt;&gt;',['../Matrix_8cpp.html#a11ec4d4662441284891dd06da0536a94',1,'Matrix.cpp']]]
+  ['operator_3e_3e_12',['operator&gt;&gt;',['../Matrix-operators_8cpp.html#a11ec4d4662441284891dd06da0536a94',1,'Matrix-operators.cpp']]]
 ];
