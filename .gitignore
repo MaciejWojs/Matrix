@@ -122,3 +122,4 @@ dokumentacja/
 *.pdf
 *.txt
 runTests*
+build/
