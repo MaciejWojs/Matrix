@@ -6,9 +6,11 @@
 int main() {
     std::cout << "\n\n";
 
-    int size = 2;
+    int size = 3;
     int array[size * size] = { 1, 2, 3, 4 };
     Matrix m(size, array);
+
+    std::cout << m << std::endl;
 
     Matrix m2(m);
 
