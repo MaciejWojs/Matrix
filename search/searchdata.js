@@ -1,33 +1,30 @@
 var indexSectionsWithContent =
 {
-  0: "abcdfgilmoprst~",
+  0: "acdfimoprst~",
   1: "m",
-  2: "c",
-  3: "cm",
-  4: "acdfgimoprst~",
-  5: "abcilops",
-  6: "o"
+  2: "m",
+  3: "acdfimoprst~",
+  4: "as",
+  5: "o"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "namespaces",
-  3: "files",
-  4: "functions",
-  5: "variables",
-  6: "related"
+  2: "files",
+  3: "functions",
+  4: "variables",
+  5: "related"
 };
 
 var indexSectionLabels =
 {
   0: "Wszystko",
   1: "Klasy",
-  2: "Przestrzenie nazw",
-  3: "Pliki",
-  4: "Funkcje",
-  5: "Zmienne",
-  6: "Przyjaciele"
+  2: "Pliki",
+  3: "Funkcje",
+  4: "Zmienne",
+  5: "Przyjaciele"
 };
 

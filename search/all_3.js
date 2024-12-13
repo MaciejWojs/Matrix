@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['deallocate_0',['deallocate',['../classMatrix.html#a06726c819199acdd66a78790311fb43d',1,'Matrix']]],
-  ['diagonal_1',['diagonal',['../classMatrix.html#a1160586f6937dab467136eb04469cec8',1,'Matrix']]],
-  ['diagonal_5fk_2',['diagonal_k',['../classMatrix.html#a2ca6b0acd7405c73a76b6a602fc15a7b',1,'Matrix']]]
+  ['fill_5fabove_5fdiagonal_0',['fill_above_diagonal',['../classMatrix.html#a9c74da931e1fdd51776971b24b382947',1,'Matrix']]],
+  ['fill_5fdiagonal_1',['fill_diagonal',['../classMatrix.html#afc6f99e0727181c7b03eef88ce06ce0e',1,'Matrix']]],
+  ['fill_5funder_5fdiagonal_2',['fill_under_diagonal',['../classMatrix.html#abb1eae1a42e9526cf5627673bc373d0a',1,'Matrix']]]
 ];

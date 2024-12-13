@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['before_0',['before',['../namespaceconvert.html#a75d0477abfbc6bc2100a204648827e9f',1,'convert']]]
+  ['check_5fshape_0',['check_shape',['../classMatrix.html#a3edf27d6ae6def59c1beb8217e983c02',1,'Matrix']]],
+  ['column_1',['column',['../classMatrix.html#a86940a4cff1fb746d0a330ff9d40a5c5',1,'Matrix']]]
 ];
