@@ -82,3 +82,4 @@ Matrix& Matrix::row(int y, int* array) {
     }
     return *this;
 }
+
