@@ -12,7 +12,7 @@ class Matrix {
 +allocate(int n) : Matrix&
 +column(int x, int* array) : Matrix&
 +diagonal(int* array) : Matrix&
-+diagonal_k(int* array) : Matrix&
++diagonal_k(int* array, int k) : Matrix&
 +fill_above_diagonal() : Matrix&
 +fill_diagonal() : Matrix&
 +fill_under_diagonal() : Matrix&

@@ -11,7 +11,7 @@ var classMatrix =
     [ "column", "classMatrix.html#a86940a4cff1fb746d0a330ff9d40a5c5", null ],
     [ "deallocate", "classMatrix.html#a06726c819199acdd66a78790311fb43d", null ],
     [ "diagonal", "classMatrix.html#a1160586f6937dab467136eb04469cec8", null ],
-    [ "diagonal_k", "classMatrix.html#a2ca6b0acd7405c73a76b6a602fc15a7b", null ],
+    [ "diagonal_k", "classMatrix.html#ad832caa27b424dfa4b67eeec14867f75", null ],
     [ "fill_above_diagonal", "classMatrix.html#a9c74da931e1fdd51776971b24b382947", null ],
     [ "fill_diagonal", "classMatrix.html#afc6f99e0727181c7b03eef88ce06ce0e", null ],
     [ "fill_under_diagonal", "classMatrix.html#abb1eae1a42e9526cf5627673bc373d0a", null ],
