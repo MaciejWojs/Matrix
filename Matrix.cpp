@@ -56,3 +56,16 @@ Matrix& Matrix::diagonal(int* array) {
     }
     return *this;
 }
+
+Matrix& Matrix::diagonal_k(int* array, int k) {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            if (i == j + k) {
+                this->array[i][j] = array[i];
+            } else {
+                this->array[i][j] = 0;
+            }
+        }
+    }
+    return *this;
+}
