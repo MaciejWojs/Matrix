@@ -43,3 +43,16 @@ Matrix& Matrix::random(int how_much) {
     }
     return *this;
 }
+
+Matrix& Matrix::diagonal(int* array) {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            if (i == j) {
+                this->array[i][j] = array[i];
+            } else {
+                this->array[i][j] = 0;
+            }
+        }
+    }
+    return *this;
+}
