@@ -83,3 +83,27 @@ Matrix& Matrix::row(int y, int* array) {
     return *this;
 }
 
+Matrix& Matrix::fill_diagonal() {
+    for (int i = 0; i < this->size; i++) {
+        this->array[i][i] = 1;
+    }
+    return *this;
+}
+
+Matrix& Matrix::fill_under_diagonal() {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < i; j++) {
+            this->array[i][j] = 1;
+        }
+    }
+    return *this;
+}
+
+Matrix& Matrix::fill_above_diagonal() {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = i + 1; j < this->size; j++) {
+            this->array[i][j] = 1;
+        }
+    }
+    return *this;
+}
