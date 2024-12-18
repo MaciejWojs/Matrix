@@ -37,12 +37,18 @@ Matrix::~Matrix() {
 
 Matrix& Matrix::allocate(int size) {
     if (this->array == nullptr) {
+#ifdef DEBUG
         std::cout << "Allocating memory\n";
+#endif
         allocateMemory(size);
     } else if (this->size < size) {
-        std::cout << "deAllocating memory\n";
+#ifdef DEBUG
+        std::cout << "Deallocating memory\n";
+#endif
         deallocate();
+#ifdef DEBUG
         std::cout << "Allocating memory\n";
+#endif
         allocateMemory(size);
     }
     return *this;

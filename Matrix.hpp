@@ -53,6 +53,7 @@ class Matrix {
     bool operator<(const Matrix& m);
 
     void print();
+    int* to_array();
     friend std::istream& operator>>(std::istream& input_stream, Matrix& m);
 };
 
