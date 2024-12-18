@@ -29,7 +29,7 @@ Matrix& Matrix::transpose() {
 Matrix& Matrix::random() {
     for (int i = 0; i < this->size; i++) {
         for (int j = 0; j < this->size; j++) {
-            this->array[i][j] = std::rand() % 100; // losowe wartości od 0 do 99
+            this->array[i][j] = std::rand() % 8; // losowe wartości od 0 do 99
         }
     }
     return *this;
