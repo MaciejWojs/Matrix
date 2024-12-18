@@ -69,3 +69,16 @@ Matrix& Matrix::diagonal_k(int* array, int k) {
     }
     return *this;
 }
+Matrix& Matrix::column(int x, int* array) {
+    for (int i = 0; i < this->size; i++) {
+        this->array[i][x] = array[i];
+    }
+    return *this;
+}
+
+Matrix& Matrix::row(int y, int* array) {
+    for (int i = 0; i < this->size; i++) {
+        this->array[y][i] = array[i];
+    }
+    return *this;
+}
