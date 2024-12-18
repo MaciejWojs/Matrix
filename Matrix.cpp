@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 #include "Matrix.hpp"
 
 void Matrix::print() {
@@ -12,4 +13,97 @@ Matrix& Matrix::insert(int row, int column, int value) {
 
 int Matrix::show(int row, int column) {
     return this->array[row][column];
+}
+
+Matrix& Matrix::transpose() {
+    Matrix temp(this->size);
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            temp.array[j][i] = this->array[i][j];
+        }
+    }
+    *this = temp;
+    return *this;
+}
+
+Matrix& Matrix::random() {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            this->array[i][j] = std::rand() % 100; // losowe wartości od 0 do 99
+        }
+    }
+    return *this;
+}
+
+Matrix& Matrix::random(int how_much) {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            this->array[i][j] = std::rand() % how_much;
+        }
+    }
+    return *this;
+}
+
+Matrix& Matrix::diagonal(int* array) {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            if (i == j) {
+                this->array[i][j] = array[i];
+            } else {
+                this->array[i][j] = 0;
+            }
+        }
+    }
+    return *this;
+}
+
+Matrix& Matrix::diagonal_k(int* array, int k) {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            if (i == j + k) {
+                this->array[i][j] = array[i];
+            } else {
+                this->array[i][j] = 0;
+            }
+        }
+    }
+    return *this;
+}
+Matrix& Matrix::column(int x, int* array) {
+    for (int i = 0; i < this->size; i++) {
+        this->array[i][x] = array[i];
+    }
+    return *this;
+}
+
+Matrix& Matrix::row(int y, int* array) {
+    for (int i = 0; i < this->size; i++) {
+        this->array[y][i] = array[i];
+    }
+    return *this;
+}
+
+Matrix& Matrix::fill_diagonal() {
+    for (int i = 0; i < this->size; i++) {
+        this->array[i][i] = 1;
+    }
+    return *this;
+}
+
+Matrix& Matrix::fill_under_diagonal() {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < i; j++) {
+            this->array[i][j] = 1;
+        }
+    }
+    return *this;
+}
+
+Matrix& Matrix::fill_above_diagonal() {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = i + 1; j < this->size; j++) {
+            this->array[i][j] = 1;
+        }
+    }
+    return *this;
 }
