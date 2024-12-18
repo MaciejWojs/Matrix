@@ -36,3 +36,12 @@ bool Matrix::operator==(const Matrix& m) const {
     }
     return true;
 }
+
+Matrix& Matrix::operator+=(int a) {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            this->array[i][j] += a;
+        }
+    }
+    return *this;
+}

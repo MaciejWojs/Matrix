@@ -15,6 +15,9 @@ int main() {
 
     std::cout << "Matrix 1:\n";
     m.print();
+    std::cout << "Matrix 1:\n";
+    m += 1;
+    m.print();
     std::cout << "Matrix 1 transposed:\n";
     m.transpose();
     m.print();
