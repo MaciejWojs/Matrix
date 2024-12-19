@@ -36,11 +36,11 @@ Matrix& Matrix::random() {
 //wypełniamy cyframi od 0 do 9 elementy macierzy. Zmienna x określa ile cyfr będziemy losować. Następnie algorytm losuje, w które miejsca wstawi wylosowane cyfry, 
 Matrix& Matrix::random(int how_much) {
     for (int i = 0; i < how_much; i++) {
-        int x = std::rand() % size;
-        int y = std::rand() % size;
+        int x = pick_Random_Row();
+        int y = pick_Random_Column();
         int randomValue = std::rand() % 10;
 #ifdef DEBUG
-        std::cout << "x: " << x << " y: " << y << " randomValue: " << randomValue << std::endl;
+        std::cout << "Row: " << x << " Column: " << y << " randomValue: " << randomValue << std::endl;
 #endif
         array[x][y] = randomValue;
 #ifdef DEBUG
@@ -130,4 +130,12 @@ int* Matrix::to_array() {
 
 int Matrix::get_size() {
     return this->size;
+}
+
+int Matrix::pick_Random_Column() {
+    return std::rand() % this->size;
+}
+
+int Matrix::pick_Random_Row() {
+    return std::rand() % this->size;
 }

@@ -56,6 +56,8 @@ class Matrix {
     void print();
     int* to_array();
     int get_size();
+    int pick_Random_Column();
+    int pick_Random_Row();
     friend std::istream& operator>>(std::istream& input_stream, Matrix& m);
 };
 
