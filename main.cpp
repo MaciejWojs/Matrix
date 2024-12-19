@@ -34,5 +34,10 @@ int main() {
     std::cout << "Matrix 2:\n";
     m2.print();
 
+
+    std::cout << "\nMatrix 1 after randomizing with attribute 5:\n";
+    matrix.random(5);
+
+
     return 0;
 }

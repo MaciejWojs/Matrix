@@ -590,7 +590,8 @@ class Matrix {
    * @return Referencja do strumienia wejściowego.
    */
   friend std::istream& operator>>(std::istream& input_stream, Matrix& m);
-
+  int pick_Random_Column();
+  int pick_Random_Row();
 };
 
 

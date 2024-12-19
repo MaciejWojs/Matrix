@@ -22,3 +22,31 @@ TEST(MatrixTranspose, MatrixTransposeDoubled) {
 
     EXPECT_EQ(m, expected_matrix);
 }
+TEST(MatrixPickRandom, MatrixPickRandomColumn) {
+    const int size = 5;
+    int i = (Matrix(size)).pick_Random_Column();
+    EXPECT_GE(i, 0);
+    EXPECT_LE(i, size - 1);
+}
+TEST(MatrixPickRandom, MatrixPickRandomRow) {
+    const int size = 5;
+    int i = (Matrix(size)).pick_Random_Row();
+    EXPECT_GE(i, 0);
+    EXPECT_LE(i, size - 1);
+}
+TEST(MatrixRandom, MatrixRandomWithAttribute) {
+    const int size = 2;
+    int array[size * size] = { 10, 20, 30, 40 };
+    Matrix m(size, array);
+    m.random(5);
+    bool is_random = false;
+    int* matrix = m.to_array();
+
+    for (int i = 0; i < m.get_size(); i++) {
+        if (matrix[i] > 0 && matrix[i] < 10) {
+            is_random = true;
+            break;
+        }
+    }
+    EXPECT_EQ(is_random, true);
+}
