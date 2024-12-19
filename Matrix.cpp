@@ -28,17 +28,24 @@ Matrix& Matrix::transpose() {
 Matrix& Matrix::random() {
     for (int i = 0; i < this->size; i++) {
         for (int j = 0; j < this->size; j++) {
-            this->array[i][j] = std::rand() % 8; // losowe wartości od 0 do 99
+            this->array[i][j] = std::rand() % 10; // losowe wartości od 0 do 99
         }
     }
     return *this;
 }
-
+//wypełniamy cyframi od 0 do 9 elementy macierzy. Zmienna x określa ile cyfr będziemy losować. Następnie algorytm losuje, w które miejsca wstawi wylosowane cyfry, 
 Matrix& Matrix::random(int how_much) {
-    for (int i = 0; i < this->size; i++) {
-        for (int j = 0; j < this->size; j++) {
-            this->array[i][j] = std::rand() % how_much;
-        }
+    for (int i = 0; i < how_much; i++) {
+        int x = std::rand() % size;
+        int y = std::rand() % size;
+        int randomValue = std::rand() % 10;
+#ifdef DEBUG
+        std::cout << "x: " << x << " y: " << y << " randomValue: " << randomValue << std::endl;
+#endif
+        array[x][y] = randomValue;
+#ifdef DEBUG
+        print();
+#endif
     }
     return *this;
 }
