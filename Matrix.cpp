@@ -2,8 +2,9 @@
 #include <cstdlib>
 #include "Matrix.hpp"
 
-void Matrix::print() {
+Matrix& Matrix::print() {
     std::cout << *this << std::endl;
+    return *this;
 }
 
 Matrix& Matrix::insert(int row, int column, int value) {
@@ -64,9 +65,13 @@ Matrix& Matrix::diagonal(int* array) {
 }
 
 Matrix& Matrix::diagonal_k(int* array, int k) {
+    if (k == 0) {
+        return diagonal(array);
+    }
+
     for (int i = 0; i < this->size; i++) {
         for (int j = 0; j < this->size; j++) {
-            if (i == j + k) {
+            if (i == j - k) {
                 this->array[i][j] = array[i];
             } else {
                 this->array[i][j] = 0;
@@ -76,6 +81,9 @@ Matrix& Matrix::diagonal_k(int* array, int k) {
     return *this;
 }
 Matrix& Matrix::column(int x, int* array) {
+    if (x >= this->size) {
+        throw std::invalid_argument("Index out of range");
+    }
     for (int i = 0; i < this->size; i++) {
         this->array[i][x] = array[i];
     }
@@ -83,6 +91,9 @@ Matrix& Matrix::column(int x, int* array) {
 }
 
 Matrix& Matrix::row(int y, int* array) {
+    if (y >= this->size) {
+        throw std::invalid_argument("Index out of range");
+    }
     for (int i = 0; i < this->size; i++) {
         this->array[y][i] = array[i];
     }
@@ -91,7 +102,13 @@ Matrix& Matrix::row(int y, int* array) {
 
 Matrix& Matrix::fill_diagonal() {
     for (int i = 0; i < this->size; i++) {
-        this->array[i][i] = 1;
+        for (int j = 0; j < this->size; j++) {
+            if (i == j) {
+                this->array[i][i] = 1;
+            } else {
+                this->array[i][j] = 0;
+            }
+        }
     }
     return *this;
 }
@@ -101,12 +118,18 @@ Matrix& Matrix::fill_under_diagonal() {
         for (int j = 0; j < i; j++) {
             this->array[i][j] = 1;
         }
+        for (int j = i; j < this->size; j++) {
+            this->array[i][j] = 0;
+        }
     }
     return *this;
 }
 
 Matrix& Matrix::fill_above_diagonal() {
     for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j <= i; j++) {
+            this->array[i][j] = 0;
+        }
         for (int j = i + 1; j < this->size; j++) {
             this->array[i][j] = 1;
         }
@@ -138,4 +161,13 @@ int Matrix::pick_Random_Column() {
 
 int Matrix::pick_Random_Row() {
     return std::rand() % this->size;
+}
+
+Matrix& Matrix::clear() {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            this->array[i][j] = 0;
+        }
+    }
+    return *this;
 }
