@@ -233,3 +233,103 @@ TEST(MatrixArithmetic, MatrixPostDecrement) {
     expected -= 1;
     EXPECT_EQ(m1--, expected);
 }
+
+TEST(MatrixArithmetic, MatrixPreDecrement) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix expected(m1);
+
+    expected -= 1;
+    EXPECT_EQ(--m1, expected);
+}
+
+TEST(MatrixArithmetic, AdditionMatrixPositive) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(m1 + 5, m2 += 5);
+}
+
+TEST(MatrixArithmetic, AdditionMatrixPositiveOpposite) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(5 + m1, m2 += 5);
+}
+
+TEST(MatrixArithmetic, AdditionMatrixNegative) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(m1 + -5, m2 += -5);
+}
+
+TEST(MatrixArithmetic, AdditionMatrixNegativeOpposite) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(-5 + m1, m2 -= 5);
+}
+
+TEST(MatrixArithmetic, SubstractionMatrixPositive) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(m1 - 5, m2 -= 5);
+}
+
+TEST(MatrixArithmetic, SubstractionMatrixPositiveOpposite) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(5 - m1, m2 -= 5);
+}
+
+TEST(MatrixArithmetic, SubstractionMatrixNegative) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(m1 - -5, m2 += 5);
+}
+
+TEST(MatrixArithmetic, SubstractionMatrixNegativeOpposite) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(-5 - m1, m2 += 5);
+}
+
+TEST(MatrixArithmetic, MultiplicationMatrixPositive) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(m1 * 2, m2 *= 2);
+}
+
+TEST(MatrixArithmetic, MultiplicationMatrixPositiveOpposite) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(2 * m1, m2 *= 2);
+}

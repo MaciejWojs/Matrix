@@ -90,3 +90,31 @@ Matrix& Matrix::operator++() {
 Matrix& Matrix::operator--(int) {
     return (*this).operator+=(-1);
 }
+
+Matrix& Matrix::operator--() {
+    return (*this)--;
+}
+
+Matrix& Matrix::operator+(int a) {
+    return (*this) += a;
+}
+
+Matrix operator+(int a, Matrix& m) {
+    return m + a;
+}
+
+Matrix& Matrix::operator-(int a) {
+    return (*this) -= a;
+}
+
+Matrix operator-(int a, Matrix& m) {
+    return m - a;
+}
+
+Matrix& Matrix::operator*(int a) {
+    return (*this) *= a;
+}
+
+Matrix operator*(int a, Matrix& m) {
+    return m * a;
+}

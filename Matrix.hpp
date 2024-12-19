@@ -441,6 +441,7 @@ class Matrix {
    * @return Referencja do dekrementowanej macierzy.
    */
   Matrix& operator--(int);
+  Matrix& operator--();
 
   /**
    * @~english
