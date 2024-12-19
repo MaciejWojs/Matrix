@@ -1,6 +1,13 @@
 #include <gtest/gtest.h>
 #include "../Matrix.hpp"
 
+enum class Operation {
+    Add,
+    Multiply,
+    Divide,
+    Subtract
+};
+
 TEST(MatrixOperators, MatrixEquality) {
     int size = 2;
     int array[size * size] = { 1, 2, 3, 4 };
@@ -19,4 +26,17 @@ TEST(MatrixOperators, MatrixEquality) {
         }
     }
     EXPECT_EQ(result, expected);
+}
+
+TEST(MatrixArithmetic, MatrixAddition) {
+    int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+
+    int expected_array[size * size] = { 2, 3, 4, 5 };
+    Matrix expected(size, expected_array);
+
+    m1 += 1;
+
+    EXPECT_EQ(m1, expected);
 }
