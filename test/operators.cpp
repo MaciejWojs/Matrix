@@ -203,3 +203,33 @@ TEST(MatrixArithmetic, MatrixDivisionNoChanges) {
 
     EXPECT_EQ(m1, expected);
 }
+
+TEST(MatrixArithmetic, MatrixPostIncrement) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix expected(m1);
+
+    expected += 1;
+    EXPECT_EQ(m1++, expected);
+}
+
+TEST(MatrixArithmetic, MatrixPreIncrement) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix expected(m1);
+
+    expected += 1;
+    EXPECT_EQ(++m1, expected);
+}
+
+TEST(MatrixArithmetic, MatrixPostDecrement) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix expected(m1);
+
+    expected -= 1;
+    EXPECT_EQ(m1--, expected);
+}
