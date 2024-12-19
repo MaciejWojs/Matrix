@@ -114,3 +114,7 @@ Matrix operator-(int a, Matrix& m) {
 Matrix& Matrix::operator*(int a) {
     return (*this) *= a;
 }
+
+Matrix operator*(int a, Matrix& m) {
+    return m * a;
+}

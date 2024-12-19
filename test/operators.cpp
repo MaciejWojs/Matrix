@@ -324,3 +324,12 @@ TEST(MatrixArithmetic, MultiplicationMatrixPositive) {
 
     EXPECT_EQ(m1 * 2, m2 *= 2);
 }
+
+TEST(MatrixArithmetic, MultiplicationMatrixPositiveOpposite) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(2 * m1, m2 *= 2);
+}
