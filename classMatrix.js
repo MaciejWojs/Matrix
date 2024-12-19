@@ -34,6 +34,7 @@ var classMatrix =
     [ "random", "classMatrix.html#a16dd97ed9595a50d95479f18149dcc15", null ],
     [ "row", "classMatrix.html#a3ec04130baa0bededffa9eca469272e6", null ],
     [ "show", "classMatrix.html#a94e6b568a87639a5148f4c36bda8fcc5", null ],
+    [ "to_array", "classMatrix.html#a7a39e69d1c2c7103af08c726f704eee0", null ],
     [ "transpose", "classMatrix.html#ad609fedfd61e93679803bb114e544569", null ],
     [ "operator*", "classMatrix.html#ac4b9085349415e5f97dd35927843ed51", null ],
     [ "operator+", "classMatrix.html#a6d6c2912d7d078cdaacd10f4eab3cb1d", null ],
