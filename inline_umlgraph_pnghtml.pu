@@ -5,11 +5,12 @@ class Matrix {
 +Matrix(int size, int* array)
 +Matrix(Matrix& matrix)
 +~Matrix()
-+check_shape() : Matrix
 +operator*(int a, Matrix& m) : Matrix
 +operator+(int a, Matrix& m) : Matrix
 +operator-(int a, Matrix& m) : Matrix
++operator/(int a, Matrix& m) : Matrix
 +allocate(int n) : Matrix&
++check_shape() : Matrix&
 +clear() : Matrix&
 +column(int x, int* array) : Matrix&
 +diagonal(int* array) : Matrix&
@@ -30,6 +31,7 @@ class Matrix {
 +operator--(int) : Matrix&
 +operator--() : Matrix&
 +operator-=(int a) : Matrix&
++operator/(int a) : Matrix&
 +operator/=(int a) : Matrix&
 +print() : Matrix&
 +random() : Matrix&
