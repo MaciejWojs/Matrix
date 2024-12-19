@@ -333,3 +333,42 @@ TEST(MatrixArithmetic, MultiplicationMatrixPositiveOpposite) {
 
     EXPECT_EQ(2 * m1, m2 *= 2);
 }
+
+TEST(MatrixArithmetic, MultiplicationMatrixNegative) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(m1 * -2, m2 *= -2);
+}
+
+TEST(MatrixArithmetic, MultiplicationMatrixNegativeOpposite) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(-2 * m1, m2 *= -2);
+}
+
+TEST(MatrixArithmetic, MultiplicationMatrixZero) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+
+    int expected_array[size * size] = { 0, 0, 0, 0 };
+    Matrix expected(size, expected_array);
+
+    EXPECT_EQ(m1 * 0, expected);
+}
+
+TEST(MatrixArithmetic, MultiplicationMatrixNoChanges) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+
+    Matrix expected(m1);
+
+    EXPECT_EQ(m1 * 1, expected);
+}
