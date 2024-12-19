@@ -151,3 +151,16 @@ bool Matrix::operator<(const Matrix& m) {
     }
     return  !((*this) > m);
 }
+
+Matrix& Matrix::check_shape() {
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            if ((i + j) % 2 == 0) {
+                this->array[i][j] = 1;
+            } else {
+                this->array[i][j] = 0;
+            }
+        }
+    }
+    return *this;
+}

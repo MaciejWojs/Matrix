@@ -448,7 +448,6 @@ TEST(MatrixArithmetic, MatrixLessThan) {
     EXPECT_FALSE(m2 < m1);
 }
 
-
 TEST(MatrixArithmetic, MatrixGreaterThanDifferentSizes) {
     const int size = 2;
     const int size2 = size + 1;

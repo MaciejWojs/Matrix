@@ -50,3 +50,13 @@ TEST(MatrixRandom, MatrixRandomWithAttribute) {
     }
     EXPECT_EQ(is_random, true);
 }
+
+TEST(OTHERS, CheckBoardShape) {
+    const int size = 2;
+    int expected_array[size * size] = { 1, 0, 0, 1 };
+    Matrix m(size);
+    m.check_shape();
+    Matrix expected(size, expected_array);
+
+    EXPECT_EQ(m, expected);
+}
