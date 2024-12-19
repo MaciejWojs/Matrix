@@ -82,3 +82,7 @@ Matrix& Matrix::operator++(int) {
     this->operator+=(1);
     return *this;
 }
+
+Matrix& Matrix::operator++() {
+    return (*this)++;
+}
