@@ -307,7 +307,7 @@ class Matrix {
    * @brief Ustawia kształt szachownicy macierzy.
    * @return Obiekt Matrix gdzie 1 reprezentuje czarne pola, a 0 reprezentuje białe pola.
    */
-  Matrix check_shape();
+  Matrix& check_shape();
 
   /**
    * @~english
@@ -494,6 +494,8 @@ class Matrix {
    * @return Referencja do wynikowej macierzy.
    */
   Matrix& operator/=(int a);
+  Matrix& operator/(int a);
+  friend Matrix operator/(int a, Matrix& m);
 
   /**
    * @~english
