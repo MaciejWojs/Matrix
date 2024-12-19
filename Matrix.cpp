@@ -64,9 +64,13 @@ Matrix& Matrix::diagonal(int* array) {
 }
 
 Matrix& Matrix::diagonal_k(int* array, int k) {
+    if (k == 0) {
+        return diagonal(array);
+    }
+
     for (int i = 0; i < this->size; i++) {
         for (int j = 0; j < this->size; j++) {
-            if (i == j + k) {
+            if (i == j - k) {
                 this->array[i][j] = array[i];
             } else {
                 this->array[i][j] = 0;

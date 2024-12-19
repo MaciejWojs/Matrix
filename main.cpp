@@ -38,6 +38,22 @@ int main() {
     std::cout << "\nMatrix 1 after randomizing with attribute 5:\n";
     matrix.random(5);
 
+    const int s_size = 3;
+    int s_array[s_size * s_size] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    Matrix s(s_size, s_array);
+    std::cout << "\nNew Matrix\n";
+    s.print();
 
+    s.diagonal(array);
+
+    std::cout << "\nMatrix after filling diagonal with array:\n";
+
+    s.print();
+
+    s.diagonal_k(array, 1);
+
+    std::cout << "\nMatrix after filling diagonal with array and k = 1:\n";
+
+    s.print();
     return 0;
 }
