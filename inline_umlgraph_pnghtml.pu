@@ -24,6 +24,7 @@ class Matrix {
 +operator+(Matrix& m) : Matrix&
 +operator+(int a) : Matrix&
 +operator++(int) : Matrix&
++operator++() : Matrix&
 +operator+=(int a) : Matrix&
 +operator-(int a) : Matrix&
 +operator--(int) : Matrix&
