@@ -53,11 +53,15 @@ class Matrix {
     bool operator>(const Matrix& m);
     bool operator<(const Matrix& m);
 
-    void print();
+    Matrix& print();
     int* to_array();
     int get_size();
+
     int pick_Random_Column();
     int pick_Random_Row();
+
+    Matrix& clear();
+
     friend std::istream& operator>>(std::istream& input_stream, Matrix& m);
 };
 

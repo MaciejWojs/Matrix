@@ -38,13 +38,18 @@ int main() {
     std::cout << "\nMatrix 1 after randomizing with attribute 5:\n";
     matrix.random(5);
 
-    const int s_size = 3;
+    const int s_size = 5;
     int s_array[s_size * s_size] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    int smaller_array[s_size] = { 1 };
     Matrix s(s_size, s_array);
     std::cout << "\nNew Matrix\n";
     s.print();
-
-    s.diagonal(array);
+    std::cout << "\nMatrix clearing:\n";
+    s.clear();
+    s.print();
+    std::cout << "\nMatrix diagonal:\n";
+    s.diagonal(smaller_array);
+    s.print();
 
     std::cout << "\nMatrix after filling diagonal with array:\n";
 
@@ -53,15 +58,27 @@ int main() {
     s.diagonal_k(array, 1);
 
     std::cout << "\nMatrix after filling diagonal with array and k = 1:\n";
-
     s.print();
 
+    std::cout << "\nMatrix after filling column 1 with array:\n";
+    s.clear();
+    s.print();
     s.column(1, array);
-
     s.print();
 
+    std::cout << "\nMatrix after filling row 2 with array:\n";
     s.row(2, array);
-
     s.print();
+
+    std::cout << "\nMatrix after filling diagonal:\n";
+    s.clear();
+    s.fill_diagonal();
+    s.print();
+
+    std::cout << "\nMatrix after clearing:\n";
+    s.clear();
+    s.print();
+
+    s.fill_above_diagonal().print().clear().print().fill_under_diagonal().print();
     return 0;
 }
