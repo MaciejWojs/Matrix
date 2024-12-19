@@ -144,3 +144,10 @@ bool Matrix::operator>(const Matrix& m) {
     }
     return greater;
 }
+
+bool Matrix::operator<(const Matrix& m) {
+    if (this->size != m.size) {
+        throw std::invalid_argument("Matrices have different sizes");
+    }
+    return  !((*this) > m);
+}

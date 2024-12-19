@@ -436,3 +436,14 @@ TEST(MatrixArithmetic, MatrixGreaterThan) {
     EXPECT_FALSE(m1 > m2);
     EXPECT_TRUE(m2 > m1);
 }
+
+TEST(MatrixArithmetic, MatrixLessThan) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    int array2[size * size] = { 2,3,4,5 };
+    Matrix m1(size, array);
+    Matrix m2(size, array2);
+
+    EXPECT_TRUE(m1 < m2);
+    EXPECT_FALSE(m2 < m1);
+}
