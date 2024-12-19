@@ -90,3 +90,7 @@ Matrix& Matrix::operator++() {
 Matrix& Matrix::operator--(int) {
     return (*this).operator+=(-1);
 }
+
+Matrix& Matrix::operator--() {
+    return (*this)--;
+}
