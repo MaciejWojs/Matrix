@@ -126,3 +126,21 @@ Matrix& Matrix::operator/(int a) {
 Matrix operator/(int a, Matrix& m) {
     return m / a;
 }
+
+bool Matrix::operator>(const Matrix& m) {
+    if (this->size != m.size) {
+        throw std::invalid_argument("Matrices have different sizes");
+    }
+
+    bool greater = true;
+
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            if (this->array[i][j] < m.array[i][j]) {
+                greater = false;
+                return greater;
+            }
+        }
+    }
+    return greater;
+}
