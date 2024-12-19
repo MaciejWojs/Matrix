@@ -27,6 +27,7 @@ var classMatrix =
     [ "operator++", "classMatrix.html#a1a1b4ee78cb7723c5e66ff9369d66e5f", null ],
     [ "operator+=", "classMatrix.html#a1d29d6024ab3a1d23b1ee008d1f6487a", null ],
     [ "operator-", "classMatrix.html#acd2e2721a17fcea4f41f3236f7869516", null ],
+    [ "operator--", "classMatrix.html#ad408cd4553ebed67bfd3fd5cc17f8423", null ],
     [ "operator--", "classMatrix.html#a417d5ca1f2e6253d24da43a3f85e929f", null ],
     [ "operator-=", "classMatrix.html#a4e15fbd51450e23db89449c13f761298", null ],
     [ "operator/=", "classMatrix.html#ac02ad9246a1e9c5dbd87e75ccc6fdb1e", null ],
