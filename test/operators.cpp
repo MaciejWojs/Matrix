@@ -372,3 +372,56 @@ TEST(MatrixArithmetic, MultiplicationMatrixNoChanges) {
 
     EXPECT_EQ(m1 * 1, expected);
 }
+
+TEST(MatrixArithmetic, DivisionMatrixPositive) {
+    const int size = 2;
+    int array[size * size] = { 2, 4, 6, 8 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(m1 / 2, m2 /= 2);
+}
+
+TEST(MatrixArithmetic, DivisionMatrixPositiveOpposite) {
+    const int size = 2;
+    int array[size * size] = { 2, 4, 6, 8 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(2 / m1, m2 /= 2);
+}
+
+TEST(MatrixArithmetic, DivisionMatrixNegative) {
+    const int size = 2;
+    int array[size * size] = { -2, -4, -6, -8 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(m1 / -2, m2 /= -2);
+}
+
+TEST(MatrixArithmetic, DivisionMatrixNegativeOpposite) {
+    const int size = 2;
+    int array[size * size] = { 2, 4, 6, 8 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(-2 / m1, m2 /= -2);
+}
+
+TEST(MatrixArithmetic, DivisionMatrixZero) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    EXPECT_THROW(m1 / 0, std::invalid_argument);
+}
+
+TEST(MatrixArithmetic, DivisionMatrixNoChanges) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+
+    Matrix expected(m1);
+
+    EXPECT_EQ(m1 / 1, expected);
+}

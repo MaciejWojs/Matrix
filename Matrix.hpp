@@ -494,7 +494,8 @@ class Matrix {
    * @return Referencja do wynikowej macierzy.
    */
   Matrix& operator/=(int a);
-  friend Matrix operator/=(int a, Matrix& m);
+  Matrix& operator/(int a);
+  friend Matrix operator/(int a, Matrix& m);
 
   /**
    * @~english
