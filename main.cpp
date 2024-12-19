@@ -24,6 +24,9 @@ int main() {
     std::cout << "Matrix 1 after subtracting -20 from all elements:\n";
     m -= -20;
     m.print();
+    std::cout << "Matrix 1 after multiplying by 2:\n";
+    m *= 2;
+    m.print();
     std::cout << "Matrix 1 transposed:\n";
     m.transpose();
     m.print();
