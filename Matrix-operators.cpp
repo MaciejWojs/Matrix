@@ -94,3 +94,7 @@ Matrix& Matrix::operator--(int) {
 Matrix& Matrix::operator--() {
     return (*this)--;
 }
+
+Matrix& Matrix::operator+(int a) {
+    return (*this) += a;
+}

@@ -243,3 +243,12 @@ TEST(MatrixArithmetic, MatrixPreDecrement) {
     expected -= 1;
     EXPECT_EQ(--m1, expected);
 }
+
+TEST(MatrixArithmetic, AdditionMatrixPositive) {
+    const int size = 2;
+    int array[size * size] = { 1, 2, 3, 4 };
+    Matrix m1(size, array);
+    Matrix m2(m1);
+
+    EXPECT_EQ(m1 + 5, m2 += 5);
+}
