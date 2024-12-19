@@ -24,7 +24,7 @@ class Matrix {
     Matrix& random();
     Matrix& random(int how_much);
     Matrix& diagonal(int* array);
-    Matrix& diagonal_k(int* array, int k);// po przekątnej są wpisane dane z tabeli,a pozostałe elementy są równe 0. Parametr k może oznaczać: 0 - przekątna przechodząca przez środek (czyli tak jak metoda diagonalna), cyfra dodatnia przesuwa diagonalną do góry macierzy o podaną cyfrę, cyfra ujemna przesuwa diagonalną w dół o podaną cyfrę,
+    Matrix& diagonal_k(int* array, int k);
     Matrix& column(int x, int* array);
     Matrix& row(int y, int* array);
     Matrix& fill_diagonal();
@@ -56,6 +56,8 @@ class Matrix {
     void print();
     int* to_array();
     int get_size();
+    int pick_Random_Column();
+    int pick_Random_Row();
     friend std::istream& operator>>(std::istream& input_stream, Matrix& m);
 };
 
