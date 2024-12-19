@@ -45,6 +45,7 @@ class Matrix {
     Matrix& operator+=(int a);
     Matrix& operator-=(int a);
     Matrix& operator*=(int a);
+    Matrix& operator/=(int a);
     // Matrix& operator (double);
 
     friend std::ostream& operator<<(std::ostream& o, const Matrix& m);
