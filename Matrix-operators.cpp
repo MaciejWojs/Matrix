@@ -77,3 +77,8 @@ Matrix& Matrix::operator/=(int a) {
     }
     return *this;
 }
+
+Matrix& Matrix::operator++(int) {
+    this->operator+=(1);
+    return *this;
+}
