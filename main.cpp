@@ -55,5 +55,13 @@ int main() {
     std::cout << "\nMatrix after filling diagonal with array and k = 1:\n";
 
     s.print();
+
+    s.column(1, array);
+
+    s.print();
+
+    s.row(2, array);
+
+    s.print();
     return 0;
 }

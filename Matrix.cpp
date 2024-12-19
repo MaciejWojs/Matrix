@@ -80,6 +80,9 @@ Matrix& Matrix::diagonal_k(int* array, int k) {
     return *this;
 }
 Matrix& Matrix::column(int x, int* array) {
+    if (x >= this->size) {
+        throw std::invalid_argument("Index out of range");
+    }
     for (int i = 0; i < this->size; i++) {
         this->array[i][x] = array[i];
     }
@@ -87,6 +90,9 @@ Matrix& Matrix::column(int x, int* array) {
 }
 
 Matrix& Matrix::row(int y, int* array) {
+    if (y >= this->size) {
+        throw std::invalid_argument("Index out of range");
+    }
     for (int i = 0; i < this->size; i++) {
         this->array[y][i] = array[i];
     }
