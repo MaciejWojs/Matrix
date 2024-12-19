@@ -36,3 +36,44 @@ bool Matrix::operator==(const Matrix& m) const {
     }
     return true;
 }
+
+Matrix& Matrix::operator+=(int a) {
+    if (std::abs(a) != 0) {
+        for (int i = 0; i < this->size; i++) {
+            for (int j = 0; j < this->size; j++) {
+                this->array[i][j] += a;
+            }
+        }
+    }
+    return *this;
+}
+
+Matrix& Matrix::operator-=(int a) {
+    this->operator+=(-a);
+    return *this;
+}
+
+Matrix& Matrix::operator*= (int a) {
+    if (a != 1) {
+        for (int i = 0; i < this->size; i++) {
+            for (int j = 0; j < this->size; j++) {
+                this->array[i][j] *= a;
+            }
+        }
+    }
+    return *this;
+}
+
+Matrix& Matrix::operator/=(int a) {
+    if (a == 0) {
+        throw std::invalid_argument("Division by zero");
+    }
+    if (a != 1) {
+        for (int i = 0; i < this->size; i++) {
+            for (int j = 0; j < this->size; j++) {
+                this->array[i][j] /= a;
+            }
+        }
+    }
+    return *this;
+}

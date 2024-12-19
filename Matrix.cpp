@@ -16,13 +16,12 @@ int Matrix::show(int row, int column) {
 }
 
 Matrix& Matrix::transpose() {
-    Matrix temp(this->size);
-    for (int i = 0; i < this->size; i++) {
-        for (int j = 0; j < this->size; j++) {
-            temp.array[j][i] = this->array[i][j];
+    for (int i = 0; i < size; i++) {
+        for (int j = i + 1; j < size; j++) {
+            std::swap(array[i][j], array[j][i]);
         }
     }
-    *this = temp;
+
     return *this;
 }
 
@@ -106,4 +105,22 @@ Matrix& Matrix::fill_above_diagonal() {
         }
     }
     return *this;
+}
+
+int* Matrix::to_array() {
+    if (size == 0 && array == nullptr) {
+        return nullptr;
+    }
+
+    int* array = new int[this->size * this->size];
+    for (int i = 0; i < this->size; i++) {
+        for (int j = 0; j < this->size; j++) {
+            array[i * this->size + j] = this->array[i][j];
+        }
+    }
+    return array;
+}
+
+int Matrix::get_size() {
+    return this->size;
 }

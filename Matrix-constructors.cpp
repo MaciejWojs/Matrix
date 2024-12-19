@@ -5,14 +5,9 @@
 Matrix::Matrix() : Matrix({}) {}
 
 Matrix::Matrix(int size) : size(size), array(nullptr) {
-    // this->size = size;
-    // int** arr = new int* [size];
-    // for (int i = 0; i < size; i++) {
-    //     arr[i] = new int;
-    // }
-    // array = arr;
-    // allocateMemory(size);
-    allocate(size);
+    if (size > 0) {
+        allocate(size);
+    }
 }
 
 Matrix::Matrix(int size, int* _array) : Matrix(size) {
@@ -37,16 +32,22 @@ Matrix::~Matrix() {
 
 Matrix& Matrix::allocate(int size) {
     if (this->array == nullptr) {
+#ifdef DEBUG
         std::cout << "Allocating memory\n";
+#endif
         allocateMemory(size);
     } else if (this->size < size) {
-        std::cout << "deAllocating memory\n";
+#ifdef DEBUG
+        std::cout << "Deallocating memory\n";
+#endif
         deallocate();
+#ifdef DEBUG
         std::cout << "Allocating memory\n";
+#endif
         allocateMemory(size);
     }
     return *this;
-}
+    }
 
 void Matrix::deallocate() {
     if (array != nullptr) {

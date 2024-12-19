@@ -45,6 +45,7 @@ class Matrix {
     Matrix& operator+=(int a);
     Matrix& operator-=(int a);
     Matrix& operator*=(int a);
+    Matrix& operator/=(int a);
     // Matrix& operator (double);
 
     friend std::ostream& operator<<(std::ostream& o, const Matrix& m);
@@ -53,6 +54,8 @@ class Matrix {
     bool operator<(const Matrix& m);
 
     void print();
+    int* to_array();
+    int get_size();
     friend std::istream& operator>>(std::istream& input_stream, Matrix& m);
 };
 
