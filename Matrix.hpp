@@ -55,6 +55,7 @@ class Matrix {
 
     void print();
     int* to_array();
+    int get_size();
     friend std::istream& operator>>(std::istream& input_stream, Matrix& m);
 };
 

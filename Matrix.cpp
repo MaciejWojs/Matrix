@@ -108,6 +108,10 @@ Matrix& Matrix::fill_above_diagonal() {
 }
 
 int* Matrix::to_array() {
+    if (size == 0 && array == nullptr) {
+        return nullptr;
+    }
+
     int* array = new int[this->size * this->size];
     for (int i = 0; i < this->size; i++) {
         for (int j = 0; j < this->size; j++) {
@@ -115,4 +119,8 @@ int* Matrix::to_array() {
         }
     }
     return array;
+}
+
+int Matrix::get_size() {
+    return this->size;
 }
