@@ -15,6 +15,7 @@ var classMatrix =
     [ "fill_above_diagonal", "classMatrix.html#a9c74da931e1fdd51776971b24b382947", null ],
     [ "fill_diagonal", "classMatrix.html#afc6f99e0727181c7b03eef88ce06ce0e", null ],
     [ "fill_under_diagonal", "classMatrix.html#abb1eae1a42e9526cf5627673bc373d0a", null ],
+    [ "get_size", "classMatrix.html#a0dfe20b13369ad36449d086b46252494", null ],
     [ "insert", "classMatrix.html#ac38e86ac91b14c779ffdb52f469d1495", null ],
     [ "operator*", "classMatrix.html#ab0ea65b3aa311b3ebc018948d14ed7fe", null ],
     [ "operator*", "classMatrix.html#ae1bc7e1fda06dab52353ac01b3196efd", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['insert_0',['insert',['../classMatrix.html#ac38e86ac91b14c779ffdb52f469d1495',1,'Matrix']]]
+  ['get_5fsize_0',['get_size',['../classMatrix.html#a0dfe20b13369ad36449d086b46252494',1,'Matrix']]]
 ];
