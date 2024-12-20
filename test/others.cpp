@@ -42,7 +42,7 @@ TEST(MatrixRandom, MatrixRandomWithAttribute) {
     bool is_random = false;
     int* matrix = m.to_array();
 
-    for (int i = 0; i < m.get_size(); i++) {
+    for (int i = 0; i < size * size; i++) {
         if (matrix[i] > 0 && matrix[i] < 10) {
             is_random = true;
             break;
